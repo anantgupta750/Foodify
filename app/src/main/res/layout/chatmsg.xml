@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/picLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pt_img"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/user" />
+
+
+        <View
+            android:id="@+id/ptONline"
+            android:layout_width="7dp"
+            android:layout_below="@+id/pt_img"
+            android:layout_toRightOf="@+id/pt_img"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-15dp"
+            android:layout_height="7dp"
+            android:layout_gravity="end"
+            android:background="@drawable/circle_white"
+            android:backgroundTint="@color/green"
+            android:elevation="1dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/picLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_marginEnd="100dp"
+
+
+        android:id="@+id/pt_chat"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/text_msg_back"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+
+            android:bufferType="normal"
+
+            android:gravity="start"
+
+
+            android:text="cnewioncencewcnceewvvwv\ncweubcewbcebc"
+            android:textColor="#313333"
+            android:textSize="15dp"
+            android:typeface="normal" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeDoctorSidePt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:animateLayoutChanges="true"
+                android:gravity="end"
+                android:paddingHorizontal="10dp"
+                android:text="7:10 AM"
+                android:textColor="@color/dark_gray"
+                android:textSize="8dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
