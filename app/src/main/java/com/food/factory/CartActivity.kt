@@ -217,7 +217,7 @@ class CartActivity : AppCompatActivity()
     }
 
     override fun onPaymentError(p0: Int, p1: String?) {
-        Toast.makeText(this@CartActivity, "Payment is successful : " + p1, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this@CartActivity, "Payment Failed : " + p1, Toast.LENGTH_SHORT).show();
     }
 }
 
